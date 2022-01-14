@@ -4,16 +4,19 @@ import { PomodoroContext } from "../../contexts/PomodoroContext";
 import "./Options.css";
 
 export default function Options() {
-  const { status, setStatus } = useContext(PomodoroContext);
+  const { status, setStatus, setMin } = useContext(PomodoroContext);
 
   function handleClickPomodoro() {
     setStatus("pomodoro");
+    setMin(25);
   }
   function handleClickShortPause() {
     setStatus("short");
+    setMin(5);
   }
   function handleClickLongPause() {
     setStatus("long");
+    setMin(15);
   }
 
   useEffect(() => {
