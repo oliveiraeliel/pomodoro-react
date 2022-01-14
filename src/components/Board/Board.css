@@ -1,0 +1,10 @@
+.board{
+    /* display: flex; */
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: transparent;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
