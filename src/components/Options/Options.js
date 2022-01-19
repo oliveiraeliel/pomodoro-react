@@ -26,9 +26,9 @@ export default function Options() {
   }
 
   useEffect(() => {
-    if (status == "short") document.body.style.backgroundColor = "#9faed6 ";
-    if (status == "long") document.body.style.backgroundColor = "#999999   ";
-    if (status == "pomodoro") document.body.style.backgroundColor = "#d74426 ";
+    if (status === "short") document.body.style.backgroundColor = "#9faed6 ";
+    if (status === "long") document.body.style.backgroundColor = "#999999   ";
+    if (status === "pomodoro") document.body.style.backgroundColor = "#d74426 ";
   }, [status]);
 
   return (
