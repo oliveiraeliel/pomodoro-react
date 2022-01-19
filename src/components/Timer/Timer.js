@@ -15,7 +15,7 @@ export default function Timer() {
     setCron(
       setInterval(() => {
         timer();
-      }, 1)
+      }, 1000)
     );
   }
 
