@@ -3,8 +3,8 @@ import { PomodoroContext } from "../../contexts/PomodoroContext";
 
 import "./Controls.css";
 
-function Controls() {
-  const { setCount } = useContext(PomodoroContext);
+export default function Controls() {
+  const { setCount, count } = useContext(PomodoroContext);
 
   function handleClickStart() {
     setCount(true);
@@ -16,10 +16,20 @@ function Controls() {
 
   return (
     <div className="controls">
-      <button onClick={handleClickStart}>Start</button>
-      <button onClick={handleClickPause}>Pause</button>
+      <button
+        onClick={handleClickStart}
+        style={count ? { background: "#cecec5" } : { background: "white" }}
+        disabled={count ? true : false}
+      >
+        Start
+      </button>
+      <button
+        onClick={handleClickPause}
+        style={!count ? { background: "#cecec5" } : { background: "white" }}
+        disabled={!count ? true : false}
+      >
+        Pause
+      </button>
     </div>
   );
 }
-
-export default Controls;

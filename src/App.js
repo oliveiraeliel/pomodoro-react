@@ -2,7 +2,7 @@ import React from "react";
 
 import "./App.css";
 import PomodoroContextProvider from "./contexts/PomodoroContext";
-import { Timer, Board } from "./components/index";
+import Board from "./components/Board/Board";
 
 export function App() {
   return (

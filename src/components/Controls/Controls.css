@@ -1,0 +1,8 @@
+.controls button{
+    width: 35%;
+    margin: 10px;
+    border-radius: 3px;
+    border: none;
+    height: 30px;
+    font-size: 16pt;
+}

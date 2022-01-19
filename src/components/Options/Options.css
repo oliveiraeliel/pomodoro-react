@@ -1,18 +1,11 @@
-
-
-.options button{
-    align-items: center;
-    width: 25%;
-    height: 25px;
-    margin-top: 10px;
-    color: white;
+.options button {
+    align-items     : center;
+    width           : 25%;
+    height          : 25px;
+    margin          : 5px;
+    color           : white;
     background-color: transparent;
-    border: none;
-    font-size: medium;
-    border-radius: 5px;
-
+    border          : none;
+    font-size       : medium;
+    border-radius   : 5px;
 }
-
-/* button:hover{
-    background-color: white;
-} */

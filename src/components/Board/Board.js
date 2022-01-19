@@ -1,16 +1,15 @@
-import React from 'react';
-import Controls from '../Controls/Controls';
-import Options from '../Options/Options';
-import Timer from '../Timer/Timer';
+import React from "react";
 
-import './Board.css';
+import { Controls, Options, Timer } from "../index";
+
+import "./Board.css";
 
 export default function Board() {
   return (
-  <div className='board'>
-      <Options/>
+    <div className="board">
+      <Options />
       <Timer />
       <Controls />
-  </div>
+    </div>
   );
 }

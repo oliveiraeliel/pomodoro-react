@@ -4,19 +4,25 @@ import { PomodoroContext } from "../../contexts/PomodoroContext";
 import "./Options.css";
 
 export default function Options() {
-  const { status, setStatus, setMin } = useContext(PomodoroContext);
+  const { status, setStatus, setMin, setCount } = useContext(PomodoroContext);
 
   function handleClickPomodoro() {
     setStatus("pomodoro");
     setMin(25);
+    setCount(false);
+    document.getElementsByClassName("sec")[0].textContent = "00";
   }
   function handleClickShortPause() {
     setStatus("short");
     setMin(5);
+    setCount(false);
+    document.getElementsByClassName("sec")[0].textContent = "00";
   }
   function handleClickLongPause() {
     setStatus("long");
     setMin(15);
+    setCount(false);
+    document.getElementsByClassName("sec")[0].textContent = "00";
   }
 
   useEffect(() => {
